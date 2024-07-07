@@ -41,31 +41,31 @@ const Countdown = () => {
   };
 
   return (
-    <div className="flex justify-center items-center text-white">
+    <div className="flex flex-wrap justify-center items-center text-white pb-20">
       {timeLeft.months > 0 && (
-        <div className="time-unit">
-          <div className="timeMonths">{formatNumber(timeLeft.months)}</div>
+        <div className="time-unit w-full sm:w-auto mb-2 sm:mb-0">
+          <div className="time">{formatNumber(timeLeft.months)}</div>
           <div className="label">Months</div>
         </div>
       )}
-      <div className="time-unit">
-        <div className="timeDays">{formatNumber(timeLeft.days)}</div>
+      <div className="time-unit w-full sm:w-auto mb-2 sm:mb-0">
+        <div className="time">{formatNumber(timeLeft.days)}</div>
         <div className="label">Days</div>
       </div>
-      <div className="time-unit">
-        <div className="timeHours">{formatNumber(timeLeft.hours)}</div>
+      <div className="time-unit w-full sm:w-auto mb-2 sm:mb-0">
+        <div className="time">{formatNumber(timeLeft.hours)}</div>
         <div className="label">Hours</div>
       </div>
-      <div className="time-unit">
-        <div className="timeMinutes">{formatNumber(timeLeft.minutes)}</div>
+      <div className="time-unit w-full sm:w-auto mb-2 sm:mb-0">
+        <div className="time">{formatNumber(timeLeft.minutes)}</div>
         <div className="label">Minutes</div>
       </div>
-      <div className="time-unit">
-        <div className="timeSeconds">{formatNumber(timeLeft.seconds)}</div>
+      <div className="time-unit w-full sm:w-auto mb-2 sm:mb-0">
+        <div className="time">{formatNumber(timeLeft.seconds)}</div>
         <div className="label">Seconds</div>
       </div>
     </div>
-  );
+  );  
 };
 
 

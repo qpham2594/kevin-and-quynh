@@ -1,24 +1,34 @@
-import Image from "next/image";
-import Header from "../components/header";
+"use client"
+import Header from '../components/header';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export default function WeddingParty() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <Header/>
-      <h1> Little Blurbs and Pics of Wedding Party </h1>
-      <div>
-      <p>
-        Photos and little description about each person in wedding party, with officiant, and flower ladies.
-      </p>
+      <div className="bg-sky-bg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
       <section id="our-team" className="py-32">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-8 text-primary">Meet Our Team</h2>
+          <div className="container mx-auto px-10">
+            <h2 className="text-6xl md:text-6xl sm:text-5xl text-white leading-tight font-serif font-bold text-center mb-2">The Wedding Party</h2>
+            <div className="flex space-x-0 m-1">
+              <img src="/newborder.png" className="small-image" />
+              <img src="/newborder2.png" className="small-image" />
+            </div>
+
+            <p className="italic text-center text-3xl m-8"> "A good friend is a connection to life — a tie to the past, a road to the future, the key to sanity in a totally insane world." - Lois Wyse </p>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md p-6 my-6 text-center">
                   <img src={member.image} alt={`Team Member ${index + 1}`} className="w-full rounded-full mb-4"/>
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                  <p className="text-gray-700">Role: {member.role}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-black">{member.name}</h3>
+                  <p className="text-gray-700">{member.role}</p>
                 </div>
               ))}
             </div>
@@ -31,43 +41,78 @@ export default function WeddingParty() {
 
 const teamMembers = [
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/1.jpg",
-    name: "John Doe",
-    role: "Software Engineer"
+    image: "/evan.JPG",
+    name: "Evan Bollinger",
+    role: "Best Man"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/4.jpg",
-    name: "Jane Smith",
-    role: "Graphic Designer"
+    image: "/tate.jpg",
+    name: "Tate Houff",
+    role: "Groomsman"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/3.jpg",
-    name: "Alex Johnson",
-    role: "Marketing Manager"
+    image: "/markham.jpg",
+    name: "Chris Markham",
+    role: "Groomsman"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/2.jpg",
-    name: "Peter Johnson",
-    role: "SEO Specialist"
+    image: "/sandy1.jpg",
+    name: "Chris Sandoval",
+    role: "Groomsman"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/5.jpg",
-    name: "Emily Brown",
-    role: "UX Designer"
+    image: "/brandon.jpg",
+    name: "Brandon Abell",
+    role: "Groomsman"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/6.jpg",
-    name: "Michael Davis",
-    role: "Frontend Developer"
+    image: "grant.jpg",
+    name: "Grant Silvestri",
+    role: "Groomsman"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/7.jpg",
-    name: "Sarah Johnson",
-    role: "Content Writer"
+    image: "/john1.jpg",
+    name: "John Chittum",
+    role: "Man of Honor"
   },
   {
-    image: "https://spacema-dev.com/elevate/assets/images/team/8.jpg",
-    name: "David Wilson",
-    role: "Project Manager"
-  }
+    image: "/kat.jpg",
+    name: "Kathleen McCarthy",
+    role: "Bridesmaid"
+  },
+  {
+    image: "/stacy1.jpg",
+    name: "Stacy Miller",
+    role: "Bridesmaid"
+  },  
+  {
+    image: "/rebekah.jpeg",
+    name: "Rebekah Lee",
+    role: "Bridesmaid"
+  },
+  {
+    image: "/jess.jpg",
+    name: "Jessica Godinez",
+    role: "Bridesmaid"
+  },
+  {
+    image: "/lindsay.jpg",
+    name: "Lindsay Schneider",
+    role: "Bridesmaid"
+  },
+  {
+    image: "sam-lauren.jpeg",
+    name: "Sam and Lauren",
+    role: "Flower-Gals"
+  },
+  {
+    image: "/tom.jpg",
+    name: "Tom Hudson",
+    role: "Officiant"
+  },
+  {
+    image: "/kirsten2.jpg",
+    name: "Kirsten Fuller",
+    role: "Ringbearer"
+  },
 ];

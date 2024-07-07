@@ -1,20 +1,52 @@
-import Image from "next/image";
-import Header from "../components/header";
+"use client"
+import Header from '../components/header';
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
-export default function WeddingParty() {
+export default function SchedulePage() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <main className="">
-      <Header/>
-      <h1> Schedule </h1>
-      <p>
-        Date & Time: March 29, 2025, 3PM <br/>
-        Venue: Lovingston Winery, Lovingston, VA <br/>
-        Countdown Clock <br/>
-        Attire: Cocktail Attire <br/>
-        Note: While we would love to have the little ones present, 
-        we kindly request that no children will be present at the ceremony and reception due to space restriction, thank you. <br/>               
-    </p>
+    <main>
+          <Header/>
+    <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <div className="max-w-7xl mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20">
+        <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div className="md:py-20 flex justify-center">
+            <h1 className="text-6xl md:text-6xl sm:text-5xl text-white leading-tight font-serif"> Schedule </h1>
+            </div>
+            <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">
+              <p>
+                Date & Time: <br/>
+                March 29, 2025, 3PM <br/><br/>
+              </p>
+              <div>
+              Venue: <br/>
+                <p className="italic"> Lovingston Winery <br/></p> 
+                885 Freshwater Cove Ln, Lovingston, VA 22949 <br/><br/>  
+              </div>
+            </div>
+            <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">
+              <ul>
+                  <li> Ceremony: 3:00PM </li><br/>
+                  <li> Cocktail Hour: 4:00PM </li><br/>
+                  <li> Reception: 5:00PM</li><br/>
+              </ul>
+            </div>
 
+          </div>
+          <div className="w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div className="col-span-4 sm:col-span-4 relative">
+              <img className="rounded-md object-cover" src="/us3.png" alt="fresh beets" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
     </main>
-  );
+  )
 }

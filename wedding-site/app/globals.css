@@ -37,70 +37,55 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 8px;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  margin: 0 5px;
+  width: 60px; /* Reduced width for smaller screens */
+  height: 60px; /* Reduced height for smaller screens */
+  line-height: 60px; /* Adjusted line-height for smaller screens */
   border-radius: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem; /* Reduced font size for smaller screens */
   text-align: center;
 }
 
-.timeMonths {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+.time {
+  width: 40px; /* Reduced width for smaller screens */
+  height: 40px; /* Reduced height for smaller screens */
+  line-height: 40px; /* Adjusted line-height for smaller screens */
   border-radius: 50%;
-  background-color: red;
-  font-size: 2rem;
+  background-color: #949494;
+  font-size: 1.0rem; /* Reduced font size for smaller screens */
   text-align: center;
 }
-
-.timeDays {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  background-color: orange;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.timeHours {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  background-color: green;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.timeMinutes {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  background-color: blue;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.timeSeconds {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  border-radius: 50%;
-  background-color: purple;
-  font-size: 2rem;
-  text-align: center;
-}
-
 
 .label {
   margin-top: 8px;
-  font-size: 1rem;
+  font-size: 0.75rem; /* Reduced font size for labels on smaller screens */
   text-transform: uppercase;
   text-align: center;
   color: #cbd5e0;
 }
+
+.small-image {
+  width: 50%;  /* Set the desired width */
+  height: 50%; /* Set the desired height */
+}
+
+@media (min-width: 640px) {
+  .time-unit {
+    width: 80px; /* Default width for larger screens */
+    height: 80px; /* Default height for larger screens */
+    line-height: 80px; /* Default line-height for larger screens */
+    font-size: 2rem; /* Default font size for larger screens */
+  }
+
+  .time {
+    width: 80px; /* Default width for larger screens */
+    height: 80px; /* Default height for larger screens */
+    line-height: 80px; /* Default line-height for larger screens */
+    font-size: 2rem; /* Default font size for larger screens */
+  }
+
+  .label {
+    font-size: 1rem; /* Default font size for labels on larger screens */
+  }
+}
+

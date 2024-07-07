@@ -10,15 +10,10 @@ export default function Header() {
   };
 
   return (
-    <header className="header text-white">
-      <nav className="flex flex-wrap items-center justify-between p-3 bg-teal-200">
-        <Link href="/">
-            <img
-              src="https://tailwindflex.com/public/favicon.ico"
-              className="h-10 w-10"
-              alt="ACME"
-              width="120"
-            />
+    <header className="header text-white font-serif">
+      <nav className="flex flex-wrap items-center justify-between p-3 bg-gray-200">
+        <Link href="/" className='font-serif text-3xl text-bold text-blue-900'>
+            Q|K
         </Link>
         <div className="flex md:hidden">
           <button
@@ -51,8 +46,8 @@ export default function Header() {
           <Link href="/schedule" className="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none"> 
               Schedule
           </Link>
-          <Link href="/venue" className="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">
-              Venue
+          <Link href="/attire" className="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">
+              Attire
           </Link>
           <Link href="/wedding-party" className="block md:inline-block text-blue-900 hover:text-blue-500 px-3 py-3 border-b-2 border-blue-900 md:border-none">
               Wedding Party
@@ -71,10 +66,11 @@ export default function Header() {
               FAQ        
           </Link>
         </div>
-        <Link href="#"
+        <Link href="https://forms.gle/kDBt6qnMRgbMcGHG6"
                     className={`toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-blue-900 hover:bg-blue-500 text-white md:rounded ${
                         menuOpen ? 'block' : 'hidden'
-                      }`}>
+                      }`}
+                    target="_blank">
             RSVP Here
         </Link>
       </nav>
