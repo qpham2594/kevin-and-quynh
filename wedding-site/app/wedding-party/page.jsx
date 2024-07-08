@@ -59,7 +59,7 @@ const teamMembers = [
     role: "Groomsman"
   },
   {
-    image: "/sandy2.jpg",
+    image: "/sandy3.jpg",
     name: "Chris Sandoval",
     role: "Groomsman"
   },
