@@ -32,7 +32,6 @@ body {
   }
 }
 
-/* styles/globals.css */
 .time-unit {
   display: flex;
   flex-direction: column;
@@ -51,22 +50,22 @@ body {
   height: 40px; /* Reduced height for smaller screens */
   line-height: 40px; /* Adjusted line-height for smaller screens */
   border-radius: 50%;
-  background-color: #949494;
+  background-color: #30346D;
   font-size: 1.0rem; /* Reduced font size for smaller screens */
   text-align: center;
 }
 
 .label {
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 0.75rem; /* Reduced font size for labels on smaller screens */
   text-transform: uppercase;
   text-align: center;
-  color: #cbd5e0;
+  color: white;
 }
 
 .small-image {
-  width: 50%;  /* Set the desired width */
-  height: 50%; /* Set the desired height */
+  width: 100%; /* Set the width to 100% to occupy full width on small screens */
+  height: auto; /* Auto height to maintain aspect ratio */
 }
 
 @media (min-width: 640px) {
@@ -86,6 +85,12 @@ body {
 
   .label {
     font-size: 1rem; /* Default font size for labels on larger screens */
+  }
+
+  .small-image {
+    width: 70%; /* Reduce width for larger screens */
+    height: auto; /* Auto height to maintain aspect ratio */
+    max-width:none;
   }
 }
 

@@ -12,7 +12,7 @@ export default function RegistryPage() {
   return (
     <main>
           <Header/>
-    <div className="min-h-screen bg-cover bg-fixed bg-sky-bg">
+    <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
       <div className="max-w-10xl mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20">
         <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">

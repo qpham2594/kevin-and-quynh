@@ -17,24 +17,25 @@ export default function SchedulePage() {
         <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="md:py-20 flex justify-center">
-            <h1 className="text-6xl md:text-6xl sm:text-5xl text-white leading-tight font-serif"> Schedule </h1>
+            <h1 className="text-5xl md:text-4xl sm:text-3xl text-white leading-tight font-serif mb-12"> Schedule </h1>
             </div>
             <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">
               <p>
-                Date & Time: <br/>
+              <span className="font-bold"> Date & Time:</span> <br/>
                 March 29, 2025, 3PM <br/><br/>
               </p>
               <div>
-              Venue: <br/>
+              <span className="font-bold"> Venue: </span> <br/>
                 <p className="italic"> Lovingston Winery <br/></p> 
                 885 Freshwater Cove Ln, Lovingston, VA 22949 <br/><br/>  
               </div>
             </div>
             <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">
               <ul>
-                  <li> Ceremony: 3:00PM </li><br/>
-                  <li> Cocktail Hour: 4:00PM </li><br/>
-                  <li> Reception: 5:00PM</li><br/>
+                  <li> 
+                  <span className="font-bold"> Ceremony: </span> 3:00PM </li><br/>
+                  <li> <span className="font-bold"> Cocktail Hour: </span> 4:00PM</li><br/>
+                  <li> <span className="font-bold"> Reception: </span> 5:00PM </li><br/>
               </ul>
             </div>
 

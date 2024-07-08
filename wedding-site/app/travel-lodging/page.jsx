@@ -13,11 +13,9 @@ export default function TravelPage() {
     return (
         <main>
             <Header />
-            <div className="min-h-screen bg-cover bg-fixed bg-sky-bg">
-                <div className="max-w-screen-2xl mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20">
-                    <div className="md:py-20 flex justify-center">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white leading-tight font-serif"> Travel and Lodging </h1>
-                    </div>
+            <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+                <div className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <h1 className="text-5xl md:text-4xl sm:text-3xl mt-20 flex justify-center font-serif"> Travel & Lodging </h1>
             <div className="flex flex-col lg:space-x-8">
             <div
                 className="w-full p-4 sm:p-6 md:p-8 lg:p-10 prose"
@@ -25,7 +23,7 @@ export default function TravelPage() {
                 data-aos-duration="1000"
                 data-aos-delay="100"
             >
-                <div className="text-xl text-white font-light mt-8 leading-relaxed">
+                <div className="text-xl text-white font-light leading-relaxed">
                 <div className="overflow-x-auto">
                     <table className="w-full text-left table-auto border-collapse border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg">
                     <thead>

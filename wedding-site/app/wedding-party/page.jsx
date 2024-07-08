@@ -12,17 +12,15 @@ export default function WeddingParty() {
   return (
     <main>
       <Header/>
-      <div className="bg-sky-bg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-      <section id="our-team" className="py-32">
+      <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <section id="our-team" className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="container mx-auto px-10">
-            <h2 className="text-6xl md:text-6xl sm:text-5xl text-white leading-tight font-serif font-bold text-center mb-2">The Wedding Party</h2>
-            <div className="flex space-x-0 m-1">
+            <h1 className="text-5xl md:text-4xl sm:text-3xl mt-20 flex justify-center font-serif text-center leading-tight">The Wedding Party</h1>
+            <div className="flex flex-col md:flex-row md:space-x-2 space-y-2 md:space-y-0 m-1 justify-center">
               <img src="/newborder.png" className="small-image" />
               <img src="/newborder2.png" className="small-image" />
             </div>
-
-            <p className="italic text-center text-3xl m-8"> "A good friend is a connection to life — a tie to the past, a road to the future, the key to sanity in a totally insane world." - Lois Wyse </p>
-
+            <p className="italic text-center text-2xl md:text-1xl sm:text-lg m-8"> "A good friend is a connection to life — a tie to the past, a road to the future, the key to sanity in a totally insane world." - Lois Wyse </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {teamMembers.map((member, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-md p-6 my-6 text-center">

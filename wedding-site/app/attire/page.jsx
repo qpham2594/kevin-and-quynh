@@ -17,7 +17,7 @@ export default function VenuePage() {
         <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="md:py-20 flex justify-center">
-            <h1 className="text-5xl md:text-5xl sm:text-4xl text-white leading-tight font-serif"> Attire: Cocktail </h1>
+            <h1 className="text-5xl md:text-4xl sm:text-3xl text-white leading-tight font-serif mb-12"> Attire: Cocktail </h1>
             </div>
             <div className="text-2xl text-white bold mt-8 leading-relaxed">
               <p>

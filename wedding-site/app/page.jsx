@@ -24,23 +24,31 @@ export default function ModernBeets() {
         </div>
       </div>
         <div className="m-12 mb-12 flex justify-center">
-          <h1 className="font-serif text-8xl text-white leading-relaxed md:text-6xl sm:text-5xl"> Q|K </h1>
+          <h1 className="font-serif text-8xl text-white leading-relaxed md:text-7xl sm:text-6xl"> Q|K </h1>
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/3 p-10 prose " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div className=" font-light mt-8 leading-relaxed ">
+            <div className="mt-8 leading-relaxed ">
               <p className="text-2xl text-white mt-8 leading-relaxed">
-                Date & Time: <br/>
+                <span className="font-bold"> Date & Time: </span> <br/>
                 March 29, 2025 at 3PM <br/><br/>
-                Venue: <br/> Lovingston Winery, <br/> Lovingston, VA <br/><br/>
-                Attire: <br/> Cocktail Attire <br/><br/>                
+                <span className="font-bold">Venue: </span> <br/> Lovingston Winery, <br/> Lovingston, VA <br/><br/>
+                <span className="font-bold">Attire: </span> <br/> Cocktail Attire <br/><br/>                
               </p>
               <div className="text-2xl text-white mt-8 leading-relaxed">
-              <ul>
-                  <li> Ceremony: 3:00PM </li>
-                  <li> Cocktail Hour: 4:00PM </li>
-                  <li> Reception: 5:00PM</li>
-              </ul> <br/><br/>
+              <div className="text-2xl text-white mt-8 leading-relaxed">
+                <ul>
+                  <li>
+                    <span className="font-bold">Ceremony:</span> 3:00PM
+                  </li>
+                  <li>
+                    <span className="font-bold">Cocktail Hour:</span> 4:00PM
+                  </li>
+                  <li>
+                    <span className="font-bold">Reception:</span> 5:00PM
+                  </li>
+                </ul>
+              </div>
             </div>
             </div>            
           </div>
