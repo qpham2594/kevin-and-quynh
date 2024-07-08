@@ -49,6 +49,11 @@ const teamMembers = [
     role: "Groomsman"
   },
   {
+    image: "/sandyclose.jpg",
+    name: "Chris Sandoval",
+    role: "Groomsman"
+  },
+  {
     image: "/markham.jpg",
     name: "Chris Markham",
     role: "Groomsman"
@@ -56,11 +61,6 @@ const teamMembers = [
   {
     image: "/brandon.jpg",
     name: "Brandon Abell",
-    role: "Groomsman"
-  },
-  {
-    image: "/sandyclose.jpg",
-    name: "Chris Sandoval",
     role: "Groomsman"
   },
   {
