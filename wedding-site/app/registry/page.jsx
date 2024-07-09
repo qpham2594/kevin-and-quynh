@@ -17,7 +17,7 @@ export default function RegistryPage() {
         <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="md:py-20 flex justify-center">
-            <h1 className="text-6xl text-white leading-relaxed md:text-5xl sm:text-4xl font-serif mb-4"> Registry </h1> 
+            <h1 className="text-white text-6xl text-white leading-relaxed md:text-5xl sm:text-4xl font-serif mb-4"> Registry </h1> 
             </div>
             <div className="text-2xl text-white font-light mt-6 leading-relaxed">
               <p>

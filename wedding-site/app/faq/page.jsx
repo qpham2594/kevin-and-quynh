@@ -43,7 +43,7 @@ export default function FAQPage() {
             <Header/>
             <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">             
                 <div className= "max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                <h1 className="text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center font-serif">Frequently Asked Questions</h1>
+                <h1 className="text-white text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center font-serif">Frequently Asked Questions</h1>
                 <ol className="max-w-4xl mx-auto mt-20 divide-y  border border-white rounded-xl">
                     {faqs.map((faq, index) => (
                         <li key={index}>
@@ -55,9 +55,9 @@ export default function FAQPage() {
                                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z">
                                 </path>
                             </svg>
-                            <span className="text-xl font-semibold">{faq.question}</span>
+                            <span className="text-white text-xl font-semibold">{faq.question}</span>
                             </summary>
-                            <p className="text-md px-14 pb-4">{faq.answer}</p>
+                            <p className="text-white text-md px-14 pb-4">{faq.answer}</p>
                             </details>
                         </li>
                     ))}

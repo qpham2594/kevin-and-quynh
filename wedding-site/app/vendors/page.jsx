@@ -14,7 +14,7 @@ export default function Vendors() {
       <Header />
       <div className="flex items-center justify-center min-h-screen bg-gray-900 bg-yellow-bg">
         <div className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          <h1 className="text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center font-serif">Vendors</h1>
+          <h1 className="text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center text-white font-serif">Vendors</h1>
           <div className="space-y-12">
             <div className="flex flex-col-reverse lg:flex-row lg:items-center justify-center lg:space-x-10">
               <div className="w-full lg:w-1/2 p-10 prose mx-auto text-left" style={{ backgroundColor: '#996666' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
