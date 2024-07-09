@@ -39,7 +39,7 @@ export default function Vendors() {
               </div>
 
               <div className="w-full lg:w-1/2 p-10 prose mx-auto flex items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <img src="aly2.jpg" alt="Photographer Aly Hansen" className="mx-auto"/>
+                <img src="aly3.jpg" alt="Photographer Aly Hansen" className="mx-auto"/>
               </div>
             </div>
 

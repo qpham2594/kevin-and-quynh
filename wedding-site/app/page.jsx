@@ -18,10 +18,8 @@ export default function ModernBeets() {
       <div className="flex justify-center">
         <Countdown />
       </div>
-      <div className="w-full flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-        <div className="relative col-span-4 sm:col-span-4 ml-6">
-            <img className="rounded-md object-cover h-80" src="/us12.png" alt="fresh beets" />
-        </div>
+      <div className="flex items-center justify-center h-full py-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img className="rounded-md object-cover h-full" src="looking.jpg" alt="fresh beets" />
       </div>
         <div className="m-12 mb-12 flex justify-center">
           <h1 className="font-serif text-8xl text-white leading-relaxed md:text-7xl sm:text-6xl"> Q|K </h1>

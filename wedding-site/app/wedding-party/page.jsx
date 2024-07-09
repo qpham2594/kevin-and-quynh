@@ -21,11 +21,11 @@ export default function WeddingParty() {
               <img src="/newborder2.png" className="small-image" />
             </div>
             <p className="italic text-center text-2xl md:text-1xl sm:text-lg m-8"> "A good friend is a connection to life — a tie to the past, a road to the future, the key to sanity in a totally insane world." - Lois Wyse </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-md p-6 my-6 text-center">
+                <div key={index} className="bg-white rounded-lg shadow-md p-4 my-6 text-center">
                   <img src={member.image} alt={`Team Member ${index + 1}`} className="w-full rounded-full mb-4"/>
-                  <h3 className="text-xl font-semibold mb-2 text-black">{member.name}</h3>
+                  <h3 className="text-xl font-semibold mb-1 text-black">{member.name}</h3>
                   <p className="text-gray-700">{member.role}</p>
                 </div>
               ))}
@@ -39,12 +39,12 @@ export default function WeddingParty() {
 
 const teamMembers = [
   {
-    image: "/evan.JPG",
+    image: "/evan1.jpg",
     name: "Evan Bollinger",
     role: "Best Man"
   },
   {
-    image: "/tate.jpg",
+    image: "/tate2.jpg",
     name: "Tate Houff",
     role: "Groomsman"
   },
@@ -54,12 +54,12 @@ const teamMembers = [
     role: "Groomsman"
   },
   {
-    image: "/markham.jpg",
+    image: "/markham1.jpg",
     name: "Chris Markham",
     role: "Groomsman"
   },
   {
-    image: "/brandon.jpg",
+    image: "/brandon1.jpg",
     name: "Brandon Abell",
     role: "Groomsman"
   },
@@ -69,12 +69,12 @@ const teamMembers = [
     role: "Groomsman"
   },
   {
-    image: "/john1.jpg",
+    image: "/john2.jpg",
     name: "John Chittum",
     role: "Man of Honor"
   },
   {
-    image: "/kat.jpg",
+    image: "/kat2.jpg",
     name: "Kathleen McCarthy",
     role: "Bridesmaid"
   },
@@ -99,7 +99,7 @@ const teamMembers = [
     role: "Bridesmaid"
   },
   {
-    image: "sam-lauren.jpeg",
+    image: "sam-lauren.jpg",
     name: "Sam and Lauren",
     role: "Flower-Gals"
   },
