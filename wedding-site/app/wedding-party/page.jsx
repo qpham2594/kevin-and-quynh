@@ -79,7 +79,7 @@ const teamMembers = [
     role: "Bridesmaid"
   },
   {
-    image: "/stacy1.jpg",
+    image: "/stacy2.jpg",
     name: "Stacy Miller",
     role: "Bridesmaid"
   },  
