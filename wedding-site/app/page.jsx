@@ -33,7 +33,7 @@ export default function ModernBeets() {
                 <span className="font-bold">Venue: </span> <br/> Lovingston Winery, <br/> Lovingston, VA <br/><br/>
                 <span className="font-bold">Attire: </span> <br/> Cocktail Attire <br/><br/>                
               </p>
-              <div className="text-2xl text-white mt-8 leading-relaxed">
+              
               <div className="text-2xl text-white mt-8 leading-relaxed">
                 <ul>
                   <li>
@@ -48,7 +48,7 @@ export default function ModernBeets() {
                 </ul>
               </div>
             </div>
-            </div>            
+                    
           </div>
           <div className="w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div className="col-span-4 sm:col-span-4 relative">
