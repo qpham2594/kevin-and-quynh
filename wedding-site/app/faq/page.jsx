@@ -20,7 +20,7 @@ const faqs = [
     },
     {
         question: "What if I miss the deadline to RSVP?",
-        answer: "Due to the limited space, if you miss the deadline to RSVP...bring a chair."
+        answer: "Due to limited space, if you miss the RSVP deadline, please contact us immediately. We will do our best to fit you in, but it may be challenging due to finalized plans. We understand that life can get busy, but timely RSVPs help us plan better."
     },
     {
         question: "Can I bring a plus one even if their name is not on the invitation?",
