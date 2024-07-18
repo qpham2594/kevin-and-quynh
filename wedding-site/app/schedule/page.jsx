@@ -19,15 +19,13 @@ export default function SchedulePage() {
           <div className="md:py-20 flex justify-center">
             <h1 className="text-5xl md:text-4xl sm:text-3xl text-white leading-tight font-serif mb-12"> Schedule </h1>
             </div>
-            <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">
-              <p>
+            <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed"> 
               <span className="font-bold"> Date & Time:</span> <br/>
-                March 29, 2025, 3PM <br/><br/>
-              </p>
+                <p className='text-lg'> March 29, 2025, 3PM </p> <br/><br/>
               <div>
               <span className="font-bold"> Venue: </span> <br/>
                 <p className="italic"> Lovingston Winery <br/></p> 
-                885 Freshwater Cove Ln, Lovingston, VA 22949 <br/><br/>  
+                <span className='text-lg'> 885 Freshwater Cove Ln, Lovingston, VA 22949 </span> <br/><br/>  
               </div>
             </div>
             <div className="text-2xl md:text-xl sm:text-xl text-white bold mt-8 leading-relaxed">

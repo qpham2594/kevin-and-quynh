@@ -8,11 +8,11 @@ const faqs = [
     },
     {
         question: "Where is the venue located?",
-        answer: "The venue is located at Lovingston Winery, Lonvingston, VA."
+        answer: "The venue is located at Lovingston Winery, Lovingston, VA."
     },
     {
         question: "How can I RSVP?",
-        answer: "You can RSVP by clicking the 'RSVP Here' button on the home page."
+        answer: "You can RSVP by clicking the 'RSVP Here' button at the top right of the page."
     },
     {
         question: "Can I bring my kids?",
@@ -23,7 +23,7 @@ const faqs = [
         answer: "Due to limited space, if you miss the RSVP deadline, please contact us immediately. We will do our best to fit you in, but it may be challenging due to finalized plans. We understand that life can get busy, but timely RSVPs help us plan better."
     },
     {
-        question: "Can I bring a plus one even if their name is not on the invitation?",
+        question: "Can I bring an unlisted plus one?",
         answer: "Due to the limited space, only inviduals with their names on the invitation are invited. While we would love to be able to celebrate with everyone, we will have to celebrate with them at another time."
     },
     {

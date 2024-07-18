@@ -44,6 +44,11 @@ const teamMembers = [
     role: "Best Man"
   },
   {
+    image: "grant.jpg",
+    name: "Grant Silvestri",
+    role: "Groomsman"
+  },
+  {
     image: "/tate2.jpg",
     name: "Tate Houff",
     role: "Groomsman"
@@ -63,11 +68,7 @@ const teamMembers = [
     name: "Brandon Abell",
     role: "Groomsman"
   },
-  {
-    image: "grant.jpg",
-    name: "Grant Silvestri",
-    role: "Groomsman"
-  },
+
   {
     image: "/john2.jpg",
     name: "John Chittum",
@@ -100,7 +101,7 @@ const teamMembers = [
   },
   {
     image: "sam-lauren.jpg",
-    name: "Sam and Lauren",
+    name: "Sam Cate and Lauren Goetz",
     role: "Flower-Gals"
   },
   {
