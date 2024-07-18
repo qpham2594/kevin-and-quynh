@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Countdown from "./components/countdown";
+import Breadcrumb from "./components/breadcrumbs";
+import Footer from "./components/footer";
 
 export default function ModernBeets() {
   useEffect(() => {
@@ -14,6 +16,9 @@ export default function ModernBeets() {
     <main>
           <Header/>
     <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <div className='flex justify-center py-6'>
+        <Breadcrumb links={[]} />
+      </div>
       <div className="max-w-10xl mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20">
       <div className="flex justify-center">
         <Countdown />
@@ -64,7 +69,8 @@ export default function ModernBeets() {
           </p>
         </div>
       </div>
-    </div>    
+      <Footer/>   
+    </div> 
     </main>
   )
 }

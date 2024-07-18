@@ -3,6 +3,8 @@ import Header from '../components/header';
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Breadcrumb from '../components/breadcrumbs';
+import Footer from '../components/footer';
 
 export default function WeddingParty() {
   useEffect(() => {
@@ -13,6 +15,9 @@ export default function WeddingParty() {
     <main>
       <Header/>
       <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <div className='flex justify-center py-6'>
+          <Breadcrumb links={[{ href: '/wedding-party', text: 'Wedding Party' }]} />
+      </div>
       <section id="our-team" className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="container mx-auto px-10">
             <h1 className="text-5xl md:text-4xl sm:text-3xl mt-20 flex justify-center font-serif text-center leading-tight text-white">The Wedding Party</h1>
@@ -32,6 +37,7 @@ export default function WeddingParty() {
             </div>
           </div>
         </section>
+        <Footer/>  
       </div>
     </main>
   );

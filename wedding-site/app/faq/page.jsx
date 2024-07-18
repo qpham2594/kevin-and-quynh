@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from "../components/header";
+import Breadcrumb from '../components/breadcrumbs';
+import Footer from '../components/footer';
 
 const faqs = [
     {
@@ -41,7 +43,10 @@ export default function FAQPage() {
     return (
         <main>
             <Header/>
-            <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">             
+            <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">   
+            <div className='flex justify-center py-6'>
+                <Breadcrumb links={[{ href: '/faq', text: 'FAQ' }]} />
+            </div>          
                 <div className= "max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <h1 className="text-white text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center font-serif">Frequently Asked Questions</h1>
                 <ol className="max-w-4xl mx-auto mt-20 divide-y  border border-white rounded-xl">
@@ -63,6 +68,7 @@ export default function FAQPage() {
                     ))}
                 </ol>   
                 </div>
+                <Footer/>  
             </div>
         </main>
     );

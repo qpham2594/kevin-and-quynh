@@ -4,6 +4,8 @@ import Header from "../components/header";
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Breadcrumb from "../components/breadcrumbs";
+import Footer from "../components/footer";
 
 export default function TravelPage() {
     useEffect(() => {
@@ -14,6 +16,9 @@ export default function TravelPage() {
         <main>
             <Header />
             <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+            <div className='flex justify-center py-6'>
+                <Breadcrumb links={[{ href: '/travel-lodging', text: 'Travel & Lodging' }]} />
+            </div>
                 <div className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <h1 className="text-5xl md:text-4xl sm:text-3xl mt-20 flex justify-center font-serif"> Travel & Lodging </h1>
             <div className="flex flex-col lg:space-x-8">
@@ -188,6 +193,7 @@ export default function TravelPage() {
                 </div>
             </div>
             </div>
+            <Footer/>  
             </div>
         </main>
     );

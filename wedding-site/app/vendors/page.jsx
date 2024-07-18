@@ -3,6 +3,8 @@ import Header from '../components/header';
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Breadcrumb from '../components/breadcrumbs';
+import Footer from '../components/footer';
 
 export default function Vendors() {
   useEffect(() => {
@@ -12,7 +14,10 @@ export default function Vendors() {
   return (
     <main>
       <Header />
-      <div className="flex items-center justify-center min-h-screen bg-gray-900 bg-yellow-bg">
+      <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <div className='flex justify-center py-6'>
+          <Breadcrumb links={[{ href: '/vendors', text: 'Vendors' }]} />
+      </div>
         <div className="max-w-6xl w-full mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20 space-y-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <h1 className="text-5xl md:text-4xl sm:text-3xl m-20 flex justify-center text-white font-serif">Vendors</h1>
           <div className="space-y-12">
@@ -79,6 +84,7 @@ export default function Vendors() {
             </div>
           </div>
         </div>
+        <Footer/>  
       </div>
     </main>
   );
