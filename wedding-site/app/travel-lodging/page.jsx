@@ -4,6 +4,7 @@ import Header from "../components/header";
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import MapContainer from './MapContainer';
 
 export default function TravelPage() {
     useEffect(() => {
@@ -31,6 +32,7 @@ export default function TravelPage() {
                     <thead>
                         <tr className="bg-gray-700 text-white">
                         <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Accommodation</th>
+                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Distance <br></br> From Venue</th>
                         <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Description</th>
                         </tr>
                     </thead>
@@ -45,6 +47,9 @@ export default function TravelPage() {
                             >
                             Red Hill Bed and Breakfast
                             </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            0.9 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Lovingly restored historic home, located about 2 minutes from Lovingston Winery, incredible breakfasts cooked by Herbert, an ex-swiss chef
@@ -62,6 +67,9 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            1.7 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Sleeps 6, great deal, located about 2 minutes from Lovingston Winery
                         </td>
                         </tr>
@@ -75,6 +83,9 @@ export default function TravelPage() {
                             >
                             Freshwater Field Cabin
                             </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            3.3 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Sleeps 8 for a low price, located minutes from the winery, nice mountain views with cows and horses on the property
@@ -92,6 +103,9 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            11 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Beautiful cabin with a kind owner who is familiar with the area and Lovingston Winery, can sleep 9 guests, arcade games, fire pit, large deck
                         </td>
                         </tr>
@@ -105,6 +119,9 @@ export default function TravelPage() {
                             >
                             The Elston Inn
                             </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            17 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Positive feedback from past couples about their top-tier customer service, has over 30 rooms, easy option if using bus service, located at Sweet Briar College
@@ -122,10 +139,14 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            19 mi
+                        </td>
+
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Located on route 151 (a hub for wineries, breweries, distilleries, and restaurants), great mountain views and mini horses, owned and operated by our family
                         </td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             <a
                             href="https://book.virginiastr.com/"
@@ -137,17 +158,23 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            8 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Less than 10 minutes away, sleeps 14, use code LOVINGSTON for 10% off and book directly to avoid Airbnb fees, pet friendly
                         </td>
-                        </tr>
+                        </tr> */}
                         <tr>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             <a
-                            href="mailto:innkeepers@harmony-hill.com"
+                            href="https://www.harmony-hill.com/"
                             className="text-blue-400 underline"
                             >
                             Harmony Hill Bed and Breakfast
                             </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            5.5 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Cozy cabin feel with multiple bedrooms, inquire about their future plans
@@ -165,6 +192,9 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            9.2 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             Sleeps up to 10, great price
                         </td>
                         </tr>
@@ -180,11 +210,19 @@ export default function TravelPage() {
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            10.7 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             New build with amazing mountain views, mention “MountainVino” for a 10% discount, concierge recommendations for shuttle service to and from Lovingston
                         </td>
                         </tr>
                     </tbody>
                     </table>
+                    <br></br>
+                    <div className="App">
+                        <h1></h1>
+                        <MapContainer />
+                    </div>
                 </div>
                 </div>
                 </div>
