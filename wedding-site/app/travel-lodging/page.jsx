@@ -51,7 +51,7 @@ export default function TravelPage() {
                             Red Hill Bed and Breakfast
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center sm:w-60">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center sm:w-40">
                             0.9 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -66,7 +66,7 @@ export default function TravelPage() {
                             rel="noopener noreferrer"
                             className="text-blue-400 underline"
                             >
-                            Ms Maria’s Place
+                            Ms.Maria's Place
                             </a>
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
