@@ -34,9 +34,9 @@ export default function TravelPage() {
                     <table className="w-full text-left table-auto border-collapse border border-gray-200 text-xs sm:text-sm md:text-base lg:text-lg">
                     <thead>
                         <tr className="bg-gray-700 text-white">
-                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Accommodation</th>
-                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Distance <br></br> From Venue</th>
-                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">Description</th>
+                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">Accommodation</th>
+                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">Distance From Venue</th>
+                        <th className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">Description</th>
                         </tr>
                     </thead>
                     <tbody className="bg-gray-800 text-white">
@@ -51,7 +51,7 @@ export default function TravelPage() {
                             Red Hill Bed and Breakfast
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center sm:w-60">
                             0.9 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -69,7 +69,7 @@ export default function TravelPage() {
                             Ms Maria’s Place
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             1.7 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -87,7 +87,7 @@ export default function TravelPage() {
                             Freshwater Field Cabin
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             3.3 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -105,7 +105,7 @@ export default function TravelPage() {
                             Treetops Lodge
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             11 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -123,7 +123,7 @@ export default function TravelPage() {
                             The Elston Inn
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             17 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -141,32 +141,52 @@ export default function TravelPage() {
                             Mountain View Mini Farm
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             19 mi
                         </td>
 
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
-                            Located on route 151 (a hub for wineries, breweries, distilleries, and restaurants), great mountain views and mini horses, owned and operated by our family
+                            Located on route 151 (a hub for wineries, breweries, distilleries, and restaurants), great mountain views and mini horses, owned and operated by the family that owns the venue
                         </td>
                         </tr>
-                        {/* <tr>
+                        <tr>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             <a
-                            href="https://book.virginiastr.com/"
+                            href="https://book.virginiastr.com/all-listings"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-400 underline"
                             >
-                            Farmhouse with heated pool
+                            Virginia STR
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
-                            8 mi
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
+                            Vary
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
-                            Less than 10 minutes away, sleeps 14, use code LOVINGSTON for 10% off and book directly to avoid Airbnb fees, pet friendly
+                            Some of the houses on this list is between 10-30 minutes away from the venue.
+                            Use code LOVINGSTON for 10% off and book directly to avoid Airbnb fees!
                         </td>
-                        </tr> */}
+                        </tr>
+                        <tr>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            <a
+                            href="https://indigohouseva.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 underline"
+                            >
+                            The Indigo Bed & Breakfast
+                            </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
+                            19 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            Right around the corner from one of the listings on Virginia STR. This is ideal for those who wants a more quiet place to unwind after the wedding, or wants to have
+                            a romantic and calm getaway after our wedding! Note: There is quiet hours from 10PM-8AM.
+                        </td>
+                        </tr>
                         <tr>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             <a
@@ -176,7 +196,7 @@ export default function TravelPage() {
                             Harmony Hill Bed and Breakfast
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             5.5 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
@@ -194,11 +214,11 @@ export default function TravelPage() {
                             Mima’s Mountain House
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             9.2 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
-                            Sleeps up to 10, great price
+                            Sleeps up to 10, great price according to our venue
                         </td>
                         </tr>
                         <tr>
@@ -212,19 +232,36 @@ export default function TravelPage() {
                             Mountain Haven Cottage
                             </a>
                         </td>
-                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
                             10.7 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             New build with amazing mountain views, mention “MountainVino” for a 10% discount, concierge recommendations for shuttle service to and from Lovingston
                         </td>
                         </tr>
+                        <tr>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            <a
+                            href="https://orchardhousebb.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 underline"
+                            >
+                            Orchard House Inn
+                            </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
+                            5.5 mi
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            The inn is a 10 minute drive from our venue and features a tasting room for anyone who is interested. 
+                        </td>
+                        </tr>
                     </tbody>
                     </table>
                     <br></br>
-                    <div className="w-full p-4 sm:p-6 md:p-8 lg:p-10 prose">
-                        <h1></h1>
-                        <MapComponent />
+                    <div className="w-full p-4 sm:p-6 md:p-8 lg:p-10 prose"> 
+                        
                     </div>
                 </div>
                 </div>

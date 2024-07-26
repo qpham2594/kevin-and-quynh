@@ -28,8 +28,7 @@ export default function VenuePage() {
               <p>
                 The ceremony will be outdoor and the reception will take place indoor, so we suggest our guests dress comfortably. <br/><br/>
                 At some point during the reception, the bride will honor her Vietnamese heritage by changing into red clothing, so we kindly ask our guests to refrained from wearing red on this day. <br/><br/>
-                We want our guests to have fun and feel good, so please feel free to bring a pair of comfortable shoes to change into during dance time since we want to see you showing off your awesome dance moves!
-                
+                We want our guests to have fun and feel good, so please feel free to bring a pair of comfortable shoes to change into during dance time since we want to see you showing off your awesome dance moves!               
               </p>
             </div>
           </div>
