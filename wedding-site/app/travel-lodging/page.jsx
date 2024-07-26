@@ -46,7 +46,7 @@ export default function TravelPage() {
                             href="https://redhillbedandbreakfast.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Red Hill Bed and Breakfast
                             </a>
@@ -64,7 +64,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/49716421?source_impression_id=p3_1659715288_zWolQ%2FH1wFZhtp9h"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Ms.Maria's Place
                             </a>
@@ -82,7 +82,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/49369093?guests=1&adults=1&s=67&unique_share_id=38377c53-9ba8-430b-b758-973cd1f8b577"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Freshwater Field Cabin
                             </a>
@@ -100,7 +100,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/950575973276142565?source_impression_id=p3_1700487967_cAErNJwY9zBoNtYY"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Treetops Lodge
                             </a>
@@ -118,7 +118,7 @@ export default function TravelPage() {
                             href="https://www.sbc.edu/elston-inn/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             The Elston Inn
                             </a>
@@ -136,7 +136,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/47859254?source_impression_id=p3_1659915588_qteCuDqhiwkSKvJg"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Mountain View Mini Farm
                             </a>
@@ -155,7 +155,7 @@ export default function TravelPage() {
                             href="https://book.virginiastr.com/all-listings"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Virginia STR
                             </a>
@@ -174,7 +174,7 @@ export default function TravelPage() {
                             href="https://indigohouseva.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             The Indigo Bed & Breakfast
                             </a>
@@ -191,7 +191,7 @@ export default function TravelPage() {
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
                             <a
                             href="https://www.harmony-hill.com/"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Harmony Hill Bed and Breakfast
                             </a>
@@ -209,7 +209,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/623783448242146621?source_impression_id=p3_1660941181_pTbZEH70FVZKPhX6"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Mima’s Mountain House
                             </a>
@@ -227,7 +227,7 @@ export default function TravelPage() {
                             href="https://www.airbnb.com/rooms/929840423544360561?guests=1&adults=1&s=67&unique_share_id=c29fc6f5-1b06-4b19-a5af-23629dbe2a9a"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Mountain Haven Cottage
                             </a>
@@ -245,7 +245,7 @@ export default function TravelPage() {
                             href="https://orchardhousebb.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-400 underline"
+                            className="text-blue-300 font-bold font-serif hover:underline"
                             >
                             Orchard House Inn
                             </a>
