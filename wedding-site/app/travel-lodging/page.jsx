@@ -4,11 +4,11 @@ import Header from "../components/header";
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import MapContainer from './MapContainer';
+import MapComponent from './mapContainer';
 
 export default function TravelPage() {
     useEffect(() => {
-        AOS.init({ once: true });
+        AOS.init({ once: false });
     }, []);
 
     return (
@@ -219,9 +219,9 @@ export default function TravelPage() {
                     </tbody>
                     </table>
                     <br></br>
-                    <div className="App">
+                    <div className="w-full p-4 sm:p-6 md:p-8 lg:p-10 prose">
                         <h1></h1>
-                        <MapContainer />
+                        <MapComponent />
                     </div>
                 </div>
                 </div>
