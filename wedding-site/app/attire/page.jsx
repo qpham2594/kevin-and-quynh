@@ -3,6 +3,8 @@ import Header from '../components/header';
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import Breadcrumb from '../components/breadcrumbs';
+import Footer from '../components/footer';
 
 export default function VenuePage() {
   useEffect(() => {
@@ -13,11 +15,14 @@ export default function VenuePage() {
     <main>
           <Header/>
     <div className="min-h-screen bg-cover bg-fixed bg-yellow-bg">
+      <div className='flex justify-center py-6'>
+          <Breadcrumb links={[{ href: '/attire', text: 'Attire' }]} />
+      </div>
       <div className="max-w-10xl mx-auto py-6 sm:px-6 sm:py-12 md:px-12 md:py-20">
         <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 p-10 prose" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           <div className="md:py-20 flex justify-center">
-            <h1 className="text-5xl md:text-5xl sm:text-4xl text-white leading-tight font-serif"> Attire: Cocktail </h1>
+            <h1 className="text-5xl md:text-4xl sm:text-3xl text-white leading-tight font-serif mb-12"> Attire: Cocktail </h1>
             </div>
             <div className="text-2xl text-white bold mt-8 leading-relaxed">
               <p>
@@ -35,6 +40,7 @@ export default function VenuePage() {
           </div>
         </div>
       </div>
+      <Footer/>  
     </div>    
     </main>
   )
