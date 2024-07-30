@@ -3,24 +3,36 @@ import { useEffect, useState } from 'react';
 
 const Countdown = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date('March 29, 2025 00:00:00').getTime();
-    const now = new Date().getTime();
-    const difference = targetDate - now;
+    const targetDate = new Date('March 29, 2025 00:00:00');
+    const now = new Date();
 
     let timeLeft = {};
 
-    if (difference > 0) {
-      const months = Math.floor(difference / (1000 * 60 * 60 * 24 * 30));
-      const days = Math.floor((difference % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    if (targetDate > now) {
+      const totalSeconds = Math.floor((targetDate - now) / 1000);
+      const totalMinutes = Math.floor(totalSeconds / 60);
+      const totalHours = Math.floor(totalMinutes / 60);
+      const totalDays = Math.floor(totalHours / 24);
 
-      if (months > 0) {
-        timeLeft = { months, days, hours, minutes, seconds };
-      } else {
-        timeLeft = { days: days + months * 30, hours, minutes, seconds };
+      let months = (targetDate.getFullYear() - now.getFullYear()) * 12;
+      months -= now.getMonth();
+      months += targetDate.getMonth();
+
+      if (targetDate.getDate() < now.getDate()) {
+        months -= 1;
       }
+
+      let days = targetDate.getDate() - now.getDate();
+      if (days < 0) {
+        const previousMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+        days += previousMonth.getDate();
+      }
+
+      const hours = totalHours % 24;
+      const minutes = totalMinutes % 60;
+      const seconds = totalSeconds % 60;
+
+      timeLeft = { months, days, hours, minutes, seconds };
     }
 
     return timeLeft;
@@ -65,8 +77,7 @@ const Countdown = () => {
         <div className="label">Seconds</div>
       </div>
     </div>
-  );  
+  );
 };
-
 
 export default Countdown;
