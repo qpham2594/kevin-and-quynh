@@ -55,7 +55,7 @@ export default function TravelPage() {
                             0.9 mi
                         </td>
                         <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
-                            Lovingly restored historic home, located about 2 minutes from Lovingston Winery, incredible breakfasts cooked by Herbert, an ex-swiss chef
+                            Lovingly restored historic home, located about 2 minutes from Lovingston Winery
                         </td>
                         </tr>
                         <tr>
