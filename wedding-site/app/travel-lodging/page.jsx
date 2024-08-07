@@ -257,6 +257,24 @@ export default function TravelPage() {
                             The inn is a 10 minute drive from our venue and features a tasting room for anyone who is interested. 
                         </td>
                         </tr>
+                        <tr>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            <a
+                            href="https://www.airbnb.com/slink/5mg876bu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-300 font-bold font-serif hover:underline"
+                            >
+                            Nearby Airbnb Options
+                            </a>
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2 text-center">
+                            ≤ 10 miles
+                        </td>
+                        <td className="border border-gray-200 px-2 py-1 sm:px-4 sm:py-2">
+                            This is a list of nearby airbnb options from the venue if needed; each location will be about 15 minute drive or less
+                        </td>
+                        </tr>
                     </tbody>
                     </table>
                     <br></br>
