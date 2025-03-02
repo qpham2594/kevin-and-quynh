@@ -27,46 +27,50 @@ export default function ModernBeets() {
         <div className="m-12 mb-12 flex justify-center">
           <h1 className="font-serif text-8xl text-white leading-relaxed md:text-7xl sm:text-6xl"> Q|K </h1>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/3 p-10 prose " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div className="mt-8 leading-relaxed ">
-              <p className="text-2xl text-white mt-8 leading-relaxed">
-                <span className="font-bold"> Date & Time: </span> <br/>
-                March 29, 2025 at 3PM <br/><br/>
-                <span className="font-bold">Venue: </span> <br/> Lovingston Winery, <br/> Lovingston, VA <br/><br/>
-                <span className="font-bold">Attire: </span> <br/> Cocktail Attire <br/><br/>                
-              </p>
-              
-              <div className="text-2xl text-white mt-8 leading-relaxed">
-                <ul>
-                  <li>
-                    <span className="font-bold">Ceremony:</span> 3:00PM
-                  </li>
-                  <li>
-                    <span className="font-bold">Cocktail Hour:</span> 4:00PM
-                  </li>
-                  <li>
-                    <span className="font-bold">Reception:</span> 5:00PM
-                  </li>
-                </ul>
-              </div>
-            </div>
-                    
-          </div>
-          <div className="w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div className="col-span-4 sm:col-span-4 relative">
-              <img className="rounded-md object-cover" src="/us8.png" alt="fresh beets" />
-            </div>
+        <div className="flex flex-col lg:flex-row mx-auto max-w-7xl">
+  
+        <div className="w-full lg:w-full" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+  <div className="flex flex-col lg:flex-row lg:space-x-4 justify-center">
 
-          </div>
-        </div>
-        <div className="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">              
-          <p className="italic text-white text-2xl font-light m-8 leading-relaxed">
-            Note: While we would love to have the little ones present, 
-            we kindly request that no children will be present at the ceremony and reception due to space restriction, thank you. <br/><br/>
+      {/* Image Section */}
+      <div className="w-full lg:w-1/2 mx-auto mt-8 lg:mt-0">
+      <div className="relative flex justify-center">
+        <img className="rounded-md object-cover w-2/3 mx-auto" src="/quyn.jpg" alt="engagement photo" />
+      </div>
+    </div>
+
+    {/* Table Section */}
+    <div className="w-full lg:w-1/2 mx-auto">
+      <div className="w-full mx-auto max-w-7xl mt-8">
+        <table className="table-auto w-full text-white text-2xl">
+          <tbody>
+            <tr className="border-b border-white">
+              <td className="px-4 py-2 font-bold">Date & Time</td>
+              <td className="px-4 py-2">March 29, 2025 at 3PM</td>
+            </tr>
+            <tr className="border-b border-white">
+              <td className="px-4 py-2 font-bold">Venue</td>
+              <td className="px-4 py-2">Lovingston Winery, Lovingston, VA</td>
+            </tr>
+            <tr className="border-b border-white">
+              <td className="px-4 py-2 font-bold">Attire</td>
+              <td className="px-4 py-2">Cocktail Attire</td>
+            </tr>
+          </tbody>
+        </table>
+
+        {/* Note Section */}
+        <div className="my-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <p className="italic text-white text-2xl font-light mx-8 leading-relaxed">
+            Note: While we would love to have the little ones present, we kindly request that no children will be present at the ceremony and reception due to space restrictions. Thank you. <br /><br />
           </p>
         </div>
       </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
       <Footer/>   
     </div> 
     </main>
